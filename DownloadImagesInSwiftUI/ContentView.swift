@@ -10,7 +10,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello World")
+        VStack {
+            URLImage(url: Constants.imageURL)
+                .frame(width: 300, height: 300)
+                .scaledToFill()
+        }
     }
 }
 
